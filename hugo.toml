@@ -16,7 +16,6 @@ pygmentscodefencesguesssyntax = true
 	mode="toggle"
 	useCDN=false
 	subtitle = "Exploring tech from the cloud down to the hardware level"
-	customcss = ["css/main.css"]
 
 [[params.social]]
 name = "GitHub"
