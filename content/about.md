@@ -4,23 +4,24 @@ draft = false
 title = 'About'
 +++
 
-I’ve spent the last few years building web applications, managing server infrastructures, and taking hardware apart just to see how it ticks. 
-For me, engineering isn't about knowing everything, it's about being genuinely curious and persistent enough to figure things out.
+I don’t fit into a specific "Developer" or "Ops" bucket. I build entire ecosystems from the ground up, from the physical layer to the application logic.
 
-Whether it's writing a WMS or an E-commerce platform, optimizing backend services, or trying to understand how a closed system works under the hood, 
-I enjoy connecting the dots between the different layers of technology. 
-I appreciate pragmatic, reliable solutions, and I like to build things that simply work.
+For me, engineering is about connecting the dots across the entire stack. I’m just as comfortable wiring an industrial warehouse with 500m of cable and dozens of Wi-Fi APs as I am architecting the multi-tenant WMS and E-commerce platform that runs on top of it and managing it's cloud infrastructure.
 
-## My Background
-- Software Engineering: I value pragmatism and time-to-market, which is why I mainly rely on the PHP/Laravel ecosystem. Depending on the specific needs of a project, I also routinely work with Svelte, Bun, Python, and Golang.
-- DevOps & Infrastructure: I focus on keeping deployments scalable and predictable. While I am fluent with Kubernetes (ArgoCD, FluxCD, etc.), I actually prefer Docker Swarm, as I find it to be a perfect fit for 95% of companies. I also use Ansible for server provisioning (or even my workstation) and tools like Grafana Alloy and Prometheus for monitoring.
-- Hardware & Reverse Engineering: When I'm away from backend development, I like to tinker. I enjoy reverse-engineering electronics and closed systems simply to learn how they were built and how they operate internally for me or professionally.
+### What I Do
 
-## What You'll Find on This Blog
+* **Software Engineering:** I’ve shipped production code with Laravel, .NET, Java, and Go. I value pragmatism and time-to-market. My background in R&D and digital archiving gave me a deep understanding of search indexing and relevancy. I build robust backends where performance and efficiency are the absolute priorities.
+* **Infrastructure & Ops:** I focus on scalable and predictable deployments. While I am fluent with Kubernetes (ArgoCD, FluxCD), I’m a strong advocate for Docker Swarm, it’s the pragmatic choice for 95% of real-world use cases. I manage full hybrid environments: servers, databases, message queues, cache layers, proxies, storage, and more.
+* **Systems & Hardware:** If it’s a "black box," I’ll open it. I enjoy reverse-engineering hardware and closed systems, dumping firmwares, sniffing UART/JTAG buses, or analyzing signals with an RTL-SDR. I don't just use Linux; I understand its internals.
 
-This space serves as my digital notebook—a place to document my daily work, my side quests, and the challenges I run into. Expect to read notes on:
+### What You'll Find Here
 
-- Architecture & Deployment: Exploring container orchestration, deploying web applications, implementing authentication systems, and testing various infrastructure solutions.
-- Development: Structuring large codebases, optimizing backend performance with asynchronous processing, and exploring modern testing practices.
-- The Lab & Experiments: Building homelabs, developing custom infrastructure tools, and sharing my reverse-engineering deep dives.
-- How I organize my workflow and knowledge base, and how I navigate software engineering with a brain wired for hyper-focus, embracing the ability to learn complex systems fast, while managing the everyday challenges of staying structured.
+This blog is my digital notebook. It’s where I document my daily work and my "side quests." Expect notes on:
+
+* **Architecture:** Exploring container orchestration, authentication systems, and infrastructure tools.
+* **Development:** Structuring large codebases, optimizing backend performance with asynchronous processing, and exploring modern testing practices.
+* **The Lab:** Building homelabs, developing custom infrastructure tools, and sharing my reverse-engineering deep dives.
+
+I navigate software engineering with a brain wired for hyper-focus. I embrace the ability to learn complex systems fast, turning that curiosity into pragmatic, reliable solutions that simply work.
+
+**If it has a processor, an API, or a network interface, I’m probably messing with it.**
