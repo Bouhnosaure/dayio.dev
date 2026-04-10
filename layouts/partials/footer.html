@@ -13,6 +13,13 @@
     {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} {{ end }}
   </div>
 </footer>
+
 {{ if not hugo.IsServer }}
-{{ template "_internal/google_analytics.html" . }}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PM196EZP2Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PM196EZP2Q');
+</script>
 {{ end }}

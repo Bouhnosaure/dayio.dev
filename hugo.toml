@@ -10,12 +10,12 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
 [pagination]
-  pagerSize = 5 # articles per page
+pagerSize = 5 # articles per page
 
 [params]
-	mode="toggle"
-	useCDN=false
-	subtitle = "Exploring tech from the cloud down to the hardware level"
+mode = "toggle"
+useCDN = false
+subtitle = "Exploring tech from the cloud down to the hardware level"
 
 [[params.social]]
 name = "GitHub"
