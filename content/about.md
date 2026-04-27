@@ -16,11 +16,11 @@ For me, engineering is about connecting the dots across the entire stack. I’m 
 
 ### What You'll Find Here
 
-This blog is my digital notebook. It’s where I document my daily work and my "side quests." Expect notes on:
+This blog is my digital notebook. It’s where I document my daily work and my "side quests". Expect notes on:
 
-* **Architecture:** Exploring container orchestration, authentication systems, and infrastructure tools.
-* **Development:** Structuring large codebases, optimizing backend performance with asynchronous processing, and exploring modern testing practices.
-* **The Lab:** Building homelabs, developing custom infrastructure tools, and sharing my reverse-engineering deep dives.
+* **Architecture:** Exploring container orchestration, authentication systems and infrastructure tools.
+* **Development:** Structuring large codebases, optimizing backend performance with asynchronous processing and exploring modern testing practices.
+* **The Lab:** Building homelabs, developing custom infrastructure tools, and sharing my reverse engineering deep dives.
 
 I navigate software engineering with a brain wired for hyper-focus. I embrace the ability to learn complex systems fast, turning that curiosity into pragmatic, reliable solutions that simply work.
 
