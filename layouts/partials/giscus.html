@@ -1,45 +1,66 @@
-<div class="comments" style="margin-top: 2rem;">
-    <script src="https://giscus.app/client.js"
-            data-repo="dayio/dayio.dev"
-            data-repo-id="R_kgDOR803dg"
-            data-category="Comments"
-            data-category-id="DIC_kwDOR803ds4C7zgv"
-            data-mapping="pathname"
-            data-strict="0"
-            data-reactions-enabled="0"
-            data-emit-metadata="0"
-            data-input-position="bottom"
-            data-theme="preferred_color_scheme"
-            data-lang="en"
-            crossorigin="anonymous"
-            async>
-    </script>
+<div id="giscus-container" class="comments" style="margin-top: 2rem;">
+    <!-- Giscus comments container -->
 </div>
 
 <script>
-    function updateGiscusTheme() {
+    (() => {
+        function getGiscusTheme() {
+            const storedTheme = localStorage.getItem('theme-storage');
 
-        const isDark = document.documentElement.classList.contains('dark') || document.body.getAttribute('data-theme') === 'dark';
+            if (storedTheme) {
+                return storedTheme === 'dark' ? 'transparent_dark' : 'light';
+            }
 
-        const theme = isDark ? 'dark' : 'light';
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-        const message = {
-            giscus: {
-                setConfig: {
-                    theme: theme,
-                },
-            },
-        };
-
-        const iframe = document.querySelector('iframe.giscus-frame');
-
-        if (iframe) {
-            iframe.contentWindow.postMessage(message, 'https://giscus.app');
+            return prefersDark ? 'transparent_dark' : 'light';
         }
 
-    }
+        function initGiscus() {
 
-    const observer = new MutationObserver(updateGiscusTheme);
+            const script = document.createElement('script');
 
-    observer.observe(document.documentElement, {attributes: true, attributeFilter: ['class', 'data-theme']});
+            const attributes = {
+                "src": "https://giscus.app/client.js",
+                "data-repo": "dayio/dayio.dev",
+                "data-repo-id": "R_kgDOR803dg",
+                "data-category": "Comments",
+                "data-category-id": "DIC_kwDOR803ds4C7zgv",
+                "data-mapping": "pathname",
+                "data-strict": "0",
+                "data-reactions-enabled": "0",
+                "data-emit-metadata": "0",
+                "data-input-position": "bottom",
+                "data-theme": getGiscusTheme(),
+                "data-lang": "en",
+                "crossorigin": "anonymous"
+            };
+
+            Object.entries(attributes).forEach(([key, value]) => {
+                script.setAttribute(key, value);
+            });
+
+            script.async = true;
+
+            document.getElementById('giscus-container').appendChild(script);
+        }
+
+        function updateGiscusTheme() {
+            const theme = getGiscusTheme();
+            const iframe = document.querySelector('iframe.giscus-frame');
+
+            if (iframe && iframe.contentWindow) {
+                iframe.contentWindow.postMessage({giscus: {setConfig: {theme}}}, 'https://giscus.app');
+            }
+        }
+
+        initGiscus();
+
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateGiscusTheme);
+
+        const observer = new MutationObserver(updateGiscusTheme);
+
+        observer.observe(document.documentElement, {attributes: true, attributeFilter: ['class', 'data-theme']});
+
+    })();
 </script>
