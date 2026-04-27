@@ -15,16 +15,16 @@
     --color-background-draft: #e8f0eb;
 
     /* Dark theme colors */
-    --color-primary-dark: #FF8200;      /* L'authentique Orange Lambda / HEV Suit */
-    --color-primary-hover-dark: #FFA333; /* Orange plus lumineux pour le survol */
-    --color-border-dark: #3A3A3A;       /* Gris métal industriel */
-    --color-text-dark: #E2E2E2;         /* Gris très clair (plus lisible que le blanc pur) */
-    --color-text-muted-dark: #8C8C8C;   /* Gris acier usé */
-    --color-background-dark: #171717;   /* Noir charbon (comme les menus du jeu) */
-    --color-background-code-dark: #222222; /* Panneau de contrôle sombre */
-    --color-background-pre-dark: #111111;  /* Les profondeurs du complexe de recherche */
-    --color-background-toc-dark: #222222;  /* Panneau de contrôle sombre */
-    --color-background-draft-dark: #4A2400; /* Fond rouille/orange très sombre */
+    --color-primary-dark: #FF8200;
+    --color-primary-hover-dark: #FFA333;
+    --color-border-dark: #3A3A3A;
+    --color-text-dark: #E2E2E2;
+    --color-text-muted-dark: #8C8C8C;
+    --color-background-dark: #171717;
+    --color-background-code-dark: #222222;
+    --color-background-pre-dark: #111111;
+    --color-background-toc-dark: #222222;
+    --color-background-draft-dark: #4A2400;
 
     /* Spacing and sizing */
     --content-max-width: 1000px;

@@ -1,8 +1,8 @@
 +++
 date = '2026-04-07T15:10:00+02:00'
-draft = false
-tags = ['linux', 'hardware']
 title = 'Fixing Logitech M575 Glitch'
+description = "A quick guide on how to fix ghost clicks on the Logitech M575 trackball by disabling the faulty back button using hwdb rules"
+tags = ['linux', 'hardware']
 +++
 
 I use a Logitech M575 as my main cursor device because a trackball is far more comfortable to use and does not hurt the carpal tunnel at all, switching from a mouse to a trackball completely stopped the pain. It takes around one or two days to adapt. However, after its only benefits, you can use your "mouse" on any surface (plane, bed, ...), don't need a lot of space, it's close to the keyboard and does not move so no useless movements, etc...

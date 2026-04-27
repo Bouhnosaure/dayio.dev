@@ -1,7 +1,7 @@
 +++
-title = "No More Coding Games"
 date = '2026-04-10T14:24:03+02:00'
-description = "Why I am moving away from ticket factories, algorithmic hiring, and dogmatic processes to focus on what actually matters."
+title = "No More Coding Games"
+description = "Why I am moving away from ticket factories, algorithmic hiring, and dogmatic processes to focus on what actually matters"
 tags = ["manifesto", "career", "pragmatism", "engineering"]
 +++
 

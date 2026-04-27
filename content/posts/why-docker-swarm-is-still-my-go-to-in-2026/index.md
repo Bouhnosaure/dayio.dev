@@ -1,8 +1,8 @@
 +++
 date = '2026-02-17T22:49:15+02:00'
-draft = false
-tags = ['docker', 'kubernetes', 'devops', 'swarm']
 title = 'Why Docker Swarm is still My Go-To in 2026'
+description = 'A look at why Docker Swarm is still a pragmatic and stress-free alternative to Kubernetes, with fast disaster recovery and a simple architecture'
+tags = ['docker', 'kubernetes', 'devops', 'swarm']
 +++
 
 I still remember the early days of containerization. Back then, I deployed a DC/OS cluster for production apps with Marathon, all running on top of Mesos. Kubernetes already existed, but it was incredibly complex for my needs and too hard to set up.

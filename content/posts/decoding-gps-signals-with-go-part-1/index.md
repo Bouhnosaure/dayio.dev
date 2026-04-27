@@ -1,6 +1,6 @@
 +++
-title = "Decoding GPS signal with GO (part 1)"
 date = '2026-04-27T13:48:32+02:00'
+title = "Decoding GPS signal with GO (part 1)"
 description = "From spatial geometry and I/Q signals to Gold Codes. Understanding the math and physics behind GPS to decode it from scratch using an RTL-SDR and Go"
 tags = ["gps", "golang", "sdr", "rtl-sdr"]
 +++
