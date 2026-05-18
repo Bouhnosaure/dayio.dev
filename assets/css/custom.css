@@ -1,0 +1,35 @@
+:root {
+    /* Improve contrast for muted text and meta information */
+    --color-text-muted: #767676;
+    --color-text-meta: #767676;
+}
+
+/* Ensure time elements and meta class use the improved contrast colors */
+time, .meta {
+    color: var(--color-text-muted);
+}
+
+/* Pagination Accessibility & Layout */
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    gap: 1rem;
+}
+
+.pagination .page-item {
+    display: inline-block;
+}
+
+.pagination .page-link {
+    text-decoration: none;
+    padding: 0.5rem 0;
+}
+
+/* Dark mode overrides for custom styles if needed */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-text-muted-dark: #dddddd;
+    }
+}
