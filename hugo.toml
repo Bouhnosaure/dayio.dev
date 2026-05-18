@@ -1,6 +1,6 @@
 baseURL = "https://dayio.dev/"
 languageCode = "en-us"
-title = "Exploring tech from the cloud down to the hardware level"
+title = "Dayio.dev"
 theme = "archie"
 copyright = "© Dayio"
 
