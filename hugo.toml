@@ -1,6 +1,6 @@
 baseURL = "https://dayio.dev/"
 languageCode = "en-us"
-title = "Dayio.dev"
+title = "Exploring tech from the cloud down to the hardware level"
 theme = "archie"
 copyright = "© Dayio"
 
@@ -8,6 +8,13 @@ copyright = "© Dayio"
 pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
+
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [pagination]
 pagerSize = 5 # articles per page
@@ -17,11 +24,20 @@ pagerSize = 5 # articles per page
 shortname = 'dayio'
 
 [params]
+    author = "Alexandre Mangin"
+    authorAlternate = "Dayio"
+    description = "Exploring tech from the cloud down to the hardware level"
+    og_image = "images/og-card.png" # You should create this image in static/images/
 mode = "toggle"
 useCDN = false
 subtitle = "Exploring tech from the cloud down to the hardware level"
 mathjax = true
 katex = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
 
 [[params.social]]
 name = "GitHub"
